@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+main {
+    background-color: gray;
+    margin: 50px 150px 50px 150px;
+    padding: 24px;
+    max-width: 1100px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 26px;
+    width: 100%;
+}
+
+.nav-header {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-header li a {
+    color: white;
+
+}
+
+.logo {
+    width: 250px;
+}
+
+.section-principal {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner-principal {
+    width: 100%;
+    position: relative;
+}
+
+.banner-principal img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.banner-principal h2 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 32px;
+    color: white;
+}
+
+.em-alta {
+    position: relative;
+}
+
+section h3 {
+    font-size: 24px;
+    padding: 18px 18px 18px 0px;
+}
+
+.carrosel {
+    display: flex;
+    gap: 18px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.my-carrosel {
+    width: 250px;
+}
+
+.my-carrosel {
+    transition: transform 0.2s;
+}
+
+.my-carrosel:hover {
+    transform: scale(1.1);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.grid-noticias {
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+}
+
+.grid-noticias img {
+    width: 240px;
+}
+
+.my-noticias {
+    position: relative;
+}
+
+.my-noticias h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    overflow: hidden;
+}
